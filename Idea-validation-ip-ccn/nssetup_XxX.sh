@@ -68,5 +68,5 @@ for i in `seq 0 $numberOfNodes`; do
 	ip netns exec wpan$i ip link set dev wpan$i up
 
 	# STARTING THE NODE PYTHON PROCESS
-	#ip netns exec wpan$i /home/wifi/Downloads/simple/Idea-validation-ip-ccn/simpleSock.py $i &>>/home/wifi/Downloads/simple/Idea-validation-ip-ccn/log/wpan$i.log &
+	ip netns exec wpan$i /home/wifi/Downloads/simple/Idea-validation-ip-ccn/simpleSock.py $i $1 $2 &>>/home/wifi/Downloads/simple/Idea-validation-ip-ccn/log/wpan$i.log &
 done
