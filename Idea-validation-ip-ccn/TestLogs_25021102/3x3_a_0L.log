@@ -1,0 +1,94 @@
+25/02/2022 03:33:20-INFO-simpleSock.py-59 l2_socket established
+25/02/2022 03:33:20-WARNING-simpleSock.py-87 True
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.074932
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.091444
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.020362
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.023860
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.036218
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.037519
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.035228
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.047977
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.020525
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.022388
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.017441
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.026420
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.021655
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.010606
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.019670
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.020560
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.022818
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.024415
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.030667
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.036275
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.033846
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.024372
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.039717
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.028340
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.024311
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.023534
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.016383
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.038050
+25/02/2022 03:33:25-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:25-WARNING-simpleSock.py-106 0:00:00.032038
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.042872
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.019022
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.035174
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.029838
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.023128
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.035646
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.028600
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.021538
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.052519
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.036571
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.055609
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.071867
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.073512
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.023409
+25/02/2022 03:33:26-WARNING-simpleSock.py-105 ['', '01', '05']
+25/02/2022 03:33:26-WARNING-simpleSock.py-106 0:00:00.003720
+Traceback (most recent call last):
+  File "/home/wifi/Downloads/simple/Idea-validation-ip-ccn/simpleSock.py", line 91, in <module>
+    _rcvPkt = l2_sock.recv(123)
+OSError: [Errno 100] Network is down

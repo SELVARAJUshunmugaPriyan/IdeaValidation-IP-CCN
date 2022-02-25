@@ -1,0 +1,8 @@
+25/02/2022 05:08:54-INFO-simpleSock.py-61 l2_socket established
+25/02/2022 05:08:54-WARNING-simpleSock.py-89 True
+Traceback (most recent call last):
+  File "/home/wifi/Downloads/simple/Idea-validation-ip-ccn/simpleSock.py", line 95, in <module>
+    emptySocket(l2_sock)
+  File "/home/wifi/Downloads/simple/Idea-validation-ip-ccn/simpleSock.py", line 21, in emptySocket
+    _sck.recv(123)
+OSError: [Errno 100] Network is down

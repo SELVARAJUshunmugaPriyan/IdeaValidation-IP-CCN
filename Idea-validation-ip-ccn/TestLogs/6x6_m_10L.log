@@ -1,0 +1,78 @@
+25/02/2022 05:24:59-INFO-simpleSock.py-61 l2_socket established
+25/02/2022 05:24:59-WARNING-simpleSock.py-89 True
+25/02/2022 05:25:41-WARNING-simpleSock.py-107 63
+25/02/2022 05:25:41-WARNING-simpleSock.py-108 ['', '01', '08', '15', '21', '22', '29']
+25/02/2022 05:25:41-WARNING-simpleSock.py-109 0:00:00.444537
+25/02/2022 05:25:41-WARNING-simpleSock.py-107 78
+25/02/2022 05:25:41-WARNING-simpleSock.py-108 ['', '01', '02', '03', '08', '13', '19', '26', '27', '28', '35', '29']
+25/02/2022 05:25:41-WARNING-simpleSock.py-109 0:00:00.548624
+25/02/2022 05:25:41-WARNING-simpleSock.py-107 72
+25/02/2022 05:25:41-WARNING-simpleSock.py-108 ['', '01', '08', '09', '10', '05', '12', '18', '23', '29']
+25/02/2022 05:25:41-WARNING-simpleSock.py-109 0:00:00.517170
+25/02/2022 05:25:42-WARNING-simpleSock.py-107 78
+25/02/2022 05:25:42-WARNING-simpleSock.py-108 ['', '01', '02', '09', '04', '11', '16', '22', '23', '29', '35', '30']
+25/02/2022 05:25:42-WARNING-simpleSock.py-109 0:00:00.580065
+25/02/2022 05:25:42-WARNING-simpleSock.py-107 63
+25/02/2022 05:25:42-WARNING-simpleSock.py-108 ['', '01', '08', '15', '16', '23', '30']
+25/02/2022 05:25:42-WARNING-simpleSock.py-109 0:00:00.348015
+25/02/2022 05:25:42-WARNING-simpleSock.py-107 66
+25/02/2022 05:25:42-WARNING-simpleSock.py-108 ['', '01', '08', '15', '22', '27', '34', '35']
+25/02/2022 05:25:42-WARNING-simpleSock.py-109 0:00:00.376863
+25/02/2022 05:25:43-WARNING-simpleSock.py-107 75
+25/02/2022 05:25:43-WARNING-simpleSock.py-108 ['', '01', '08', '15', '20', '26', '21', '28', '34', '29', '30']
+25/02/2022 05:25:43-WARNING-simpleSock.py-109 0:00:00.575666
+25/02/2022 05:25:43-WARNING-simpleSock.py-107 66
+25/02/2022 05:25:43-WARNING-simpleSock.py-108 ['', '01', '08', '15', '20', '27', '34', '35']
+25/02/2022 05:25:43-WARNING-simpleSock.py-109 0:00:00.400591
+25/02/2022 05:25:44-WARNING-simpleSock.py-107 69
+25/02/2022 05:25:44-WARNING-simpleSock.py-108 ['', '01', '02', '09', '15', '20', '27', '34', '29']
+25/02/2022 05:25:44-WARNING-simpleSock.py-109 0:00:00.380020
+25/02/2022 05:25:44-WARNING-simpleSock.py-107 81
+25/02/2022 05:25:44-WARNING-simpleSock.py-108 ['', '01', '08', '03', '04', '11', '16', '22', '15', '20', '27', '28', '29']
+25/02/2022 05:25:44-WARNING-simpleSock.py-109 0:00:00.512746
+25/02/2022 05:25:44-WARNING-simpleSock.py-107 69
+25/02/2022 05:25:44-WARNING-simpleSock.py-108 ['', '01', '07', '08', '09', '10', '17', '23', '29']
+25/02/2022 05:25:44-WARNING-simpleSock.py-109 0:00:00.656567
+25/02/2022 05:25:45-WARNING-simpleSock.py-107 66
+25/02/2022 05:25:45-WARNING-simpleSock.py-108 ['', '01', '08', '15', '16', '23', '30', '35']
+25/02/2022 05:25:45-WARNING-simpleSock.py-109 0:00:00.437387
+25/02/2022 05:25:46-WARNING-simpleSock.py-107 69
+25/02/2022 05:25:46-WARNING-simpleSock.py-108 ['', '01', '07', '13', '19', '20', '27', '28', '29']
+25/02/2022 05:25:46-WARNING-simpleSock.py-109 0:00:00.408316
+25/02/2022 05:25:46-WARNING-simpleSock.py-107 69
+25/02/2022 05:25:46-WARNING-simpleSock.py-108 ['', '01', '08', '13', '20', '27', '28', '29', '30']
+25/02/2022 05:25:46-WARNING-simpleSock.py-109 0:00:00.384961
+25/02/2022 05:25:47-WARNING-simpleSock.py-107 66
+25/02/2022 05:25:47-WARNING-simpleSock.py-108 ['', '01', '08', '15', '20', '27', '28', '35']
+25/02/2022 05:25:47-WARNING-simpleSock.py-109 0:00:00.281943
+25/02/2022 05:25:47-WARNING-simpleSock.py-107 63
+25/02/2022 05:25:47-WARNING-simpleSock.py-108 ['', '01', '08', '14', '21', '28', '35']
+25/02/2022 05:25:47-WARNING-simpleSock.py-109 0:00:00.188699
+25/02/2022 05:25:48-WARNING-simpleSock.py-107 75
+25/02/2022 05:25:48-WARNING-simpleSock.py-108 ['', '01', '07', '14', '09', '16', '22', '27', '34', '29', '35']
+25/02/2022 05:25:48-WARNING-simpleSock.py-109 0:00:00.454124
+25/02/2022 05:25:48-WARNING-simpleSock.py-107 66
+25/02/2022 05:25:48-WARNING-simpleSock.py-108 ['', '01', '08', '13', '20', '21', '28', '29']
+25/02/2022 05:25:48-WARNING-simpleSock.py-109 0:00:00.425554
+25/02/2022 05:25:48-WARNING-simpleSock.py-107 66
+25/02/2022 05:25:48-WARNING-simpleSock.py-108 ['', '01', '07', '13', '20', '27', '34', '35']
+25/02/2022 05:25:48-WARNING-simpleSock.py-109 0:00:00.400575
+25/02/2022 05:25:48-WARNING-simpleSock.py-107 63
+25/02/2022 05:25:48-WARNING-simpleSock.py-108 ['', '01', '08', '09', '16', '23', '30']
+25/02/2022 05:25:48-WARNING-simpleSock.py-109 0:00:00.208540
+25/02/2022 05:25:49-WARNING-simpleSock.py-107 66
+25/02/2022 05:25:49-WARNING-simpleSock.py-108 ['', '01', '02', '03', '10', '17', '24', '29']
+25/02/2022 05:25:49-WARNING-simpleSock.py-109 0:00:00.490408
+25/02/2022 05:25:49-WARNING-simpleSock.py-107 72
+25/02/2022 05:25:49-WARNING-simpleSock.py-108 ['', '01', '07', '13', '08', '15', '16', '17', '24', '29']
+25/02/2022 05:25:49-WARNING-simpleSock.py-109 0:00:00.500278
+25/02/2022 05:25:49-WARNING-simpleSock.py-107 72
+25/02/2022 05:25:49-WARNING-simpleSock.py-108 ['', '01', '08', '09', '10', '05', '12', '18', '24', '30']
+25/02/2022 05:25:49-WARNING-simpleSock.py-109 0:00:00.432801
+25/02/2022 05:25:50-WARNING-simpleSock.py-107 66
+25/02/2022 05:25:50-WARNING-simpleSock.py-108 ['', '01', '08', '09', '16', '22', '28', '35']
+25/02/2022 05:25:50-WARNING-simpleSock.py-109 0:00:00.504350
+Traceback (most recent call last):
+  File "/home/wifi/Downloads/simple/Idea-validation-ip-ccn/simpleSock.py", line 94, in <module>
+    _rcvPkt = l2_sock.recv(123)
+OSError: [Errno 100] Network is down

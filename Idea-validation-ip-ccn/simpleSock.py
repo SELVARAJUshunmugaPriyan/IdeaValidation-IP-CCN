@@ -7,6 +7,7 @@ import logging
 import datetime
 import math
 import select
+import random
 
 def emptySocket(sock):
     # Remove the data present on the socket
@@ -36,6 +37,7 @@ if __name__ == "__main__" :
     try:
         _cache['nod'] = int(sys.argv[1])
         _cache['_x'] = int(sys.argv[2])
+        _cache['drp'] = int(sys.argv[4])
         _cache['x_x'] = _cache['_x'] * _cache['_x']
         _cache['ctn']['{0:02d}'.format(_cache['x_x'])] = []
     except ValueError :
@@ -88,27 +90,30 @@ if __name__ == "__main__" :
     while True and _cache['sat'] :
         try:
             _rcvPkt = None
-            _rcvPkt = l2_sock.recv(123)
+            if round(random.random() * 100) > _cache['drp'] :
+                _rcvPkt = l2_sock.recv(123)
             emptySocket(l2_sock)
         except BlockingIOError:
             pass
-        if _cache['com'] : # Generating New content
-            _sndBfr = _sndBfr[:18] + bytes(str(datetime.datetime.now()), 'utf8')
+        if _cache['com'] and round(random.random() * 100) > _cache['drp']: # Generating New content
+            _sndBfr = _sndBfr[:19] + bytes(str(datetime.datetime.now()), 'utf8')
             _tBytes = l2_sock.send(_sndBfr)
-            logging.warning(_sndBfr)
             logging.debug("Total sent bytes {}".format(_tBytes))
         elif _rcvPkt :
             _top = _rcvPkt[16:18].decode('utf-8')
-            _val = _rcvPkt[18:].decode('utf-8')
-            
+            _jmp = _rcvPkt[18:].decode('utf-8').split('>')
+            _val = _jmp[-1]
             if _top in _cache['ctn'].keys() and _val not in _cache['ctn'][_top]:
-                logging.warning(_rcvPkt)
+                logging.warning(_rcvPkt.__len__())
+                logging.warning(_jmp[:-1])
                 logging.warning(datetime.datetime.now() - datetime.datetime.strptime(_val, "%Y-%m-%d %H:%M:%S.%f")) # 2022-02-24 15:02:45.860661
                 # Update cache if new value
                 _cache['ctn'][_top].append(_val)
                 _cache['ctn'][_top] = _cache['ctn'][_top][-20:]
-                _sndBfr = _sndBfr[:15] + _rcvPkt[15:]
-                _tBytes = l2_sock.send(_sndBfr)
-                logging.debug("Total sent bytes {}".format(_tBytes))
+                if _cache['nod'] and round(random.random() * 100) > _cache['drp'] :
+                    _sndBfr = _sndBfr[:15] + _rcvPkt[15:19] + bytes('{0:02d}'.format(_cache['nod']), 'utf8') + b'>' + _rcvPkt[19:]
+                    logging.debug(_sndBfr)
+                    _tBytes = l2_sock.send(_sndBfr)
+                    logging.debug("Total sent bytes {}".format(_tBytes))
 
-        time.sleep(1)
+        #time.sleep(0.001)

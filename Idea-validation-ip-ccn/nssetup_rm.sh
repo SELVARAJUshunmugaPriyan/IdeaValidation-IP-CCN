@@ -2,11 +2,11 @@
 
 if [[ $2 = "y" ]]
 then
-    read -p "Are you sure you want to delete all log files?(y/n)" j
-    if [ $j = "y" ]
-    then
+    #read -p "Are you sure you want to delete all log files?(y/n)" j
+    #if [ $j = "y" ]
+    #then
         rm -rf /home/wifi/Downloads/simple/Idea-validation-ip-ccn/log/*
-    fi
+    #fi
 fi
 
 n=`echo $1'*'$1 | bc`

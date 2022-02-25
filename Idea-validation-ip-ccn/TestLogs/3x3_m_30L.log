@@ -1,0 +1,21 @@
+25/02/2022 05:10:08-INFO-simpleSock.py-61 l2_socket established
+25/02/2022 05:10:08-WARNING-simpleSock.py-89 True
+25/02/2022 05:10:13-WARNING-simpleSock.py-107 51
+25/02/2022 05:10:13-WARNING-simpleSock.py-108 ['', '01', '05']
+25/02/2022 05:10:13-WARNING-simpleSock.py-109 0:00:00.095630
+25/02/2022 05:10:17-WARNING-simpleSock.py-107 54
+25/02/2022 05:10:17-WARNING-simpleSock.py-108 ['', '01', '02', '06']
+25/02/2022 05:10:17-WARNING-simpleSock.py-109 0:00:00.063496
+25/02/2022 05:10:21-WARNING-simpleSock.py-107 51
+25/02/2022 05:10:21-WARNING-simpleSock.py-108 ['', '01', '05']
+25/02/2022 05:10:21-WARNING-simpleSock.py-109 0:00:00.014494
+25/02/2022 05:10:21-WARNING-simpleSock.py-107 51
+25/02/2022 05:10:21-WARNING-simpleSock.py-108 ['', '01', '05']
+25/02/2022 05:10:21-WARNING-simpleSock.py-109 0:00:00.052469
+25/02/2022 05:10:22-WARNING-simpleSock.py-107 51
+25/02/2022 05:10:22-WARNING-simpleSock.py-108 ['', '01', '05']
+25/02/2022 05:10:22-WARNING-simpleSock.py-109 0:00:00.075942
+Traceback (most recent call last):
+  File "/home/wifi/Downloads/simple/Idea-validation-ip-ccn/simpleSock.py", line 94, in <module>
+    _rcvPkt = l2_sock.recv(123)
+OSError: [Errno 100] Network is down
