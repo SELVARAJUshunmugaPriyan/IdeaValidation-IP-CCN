@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 import socket
 import sys
-import time
+#import time
 import binascii
 import logging
 import datetime
-import math
 import select
 import random
 
@@ -44,16 +43,17 @@ if __name__ == "__main__" :
         raise Exception("Incorrect value for number of nodes")
     except IndexError :
         raise Exception("No value for number of nodes")
-
-    logging.basicConfig(
-        filename='/home/wifi/Downloads/simple/Idea-validation-ip-ccn/log/wpan{}.log'.
-            format(_cache['nod']),
-        filemode='a',
-        level=logging.INFO,
-        format=("%(asctime)s-%(levelname)s-%(filename)s-%(lineno)d "
-        "%(message)s"),
-        datefmt='%d/%m/%Y %H:%M:%S'
-    )
+        
+    if not _cache['nod'] :
+        logging.basicConfig(
+            filename='/home/wifi/Downloads/simple/Idea-validation-ip-ccn/log/wpan{}.log'.
+                format(_cache['nod']),
+            filemode='a',
+            level=logging.INFO,
+            format=("%(asctime)s-%(levelname)s-%(filename)s-%(lineno)d "
+            "%(message)s"),
+            datefmt='%d/%m/%Y %H:%M:%S'
+        )
 
     l2_sock = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(0x0003))
     l2_sock.bind(('wpan{}'.format(_cache['nod']), 0, socket.PACKET_BROADCAST))
@@ -66,7 +66,7 @@ if __name__ == "__main__" :
             _sndBfr += _strng
 
     if _cache['nod'] == _cache['x_x'] :
-        logging.warning(_cache['nod'])
+        logging.info(_cache['nod'])
         _cache['com'] = True
         _sndBfr += b'>' + bytes('{0:02d}'.format(_cache['x_x']), 'utf8') + b'>'
 
@@ -86,7 +86,7 @@ if __name__ == "__main__" :
     except IndexError :
         raise Exception("No value for number of nodes")
 
-    logging.warning(_cache['sat'])
+    logging.info(_cache['sat'])
     while True and _cache['sat'] :
         try:
             _rcvPkt = None
@@ -104,9 +104,9 @@ if __name__ == "__main__" :
             _jmp = _rcvPkt[18:].decode('utf-8').split('>')
             _val = _jmp[-1]
             if _top in _cache['ctn'].keys() and _val not in _cache['ctn'][_top]:
-                logging.warning(_rcvPkt.__len__())
-                logging.warning(_jmp[:-1])
-                logging.warning(datetime.datetime.now() - datetime.datetime.strptime(_val, "%Y-%m-%d %H:%M:%S.%f")) # 2022-02-24 15:02:45.860661
+                logging.info(_rcvPkt.__len__())
+                logging.info(_jmp[:-1])
+                logging.info(datetime.datetime.now() - datetime.datetime.strptime(_val, "%Y-%m-%d %H:%M:%S.%f")) # 2022-02-24 15:02:45.860661
                 # Update cache if new value
                 _cache['ctn'][_top].append(_val)
                 _cache['ctn'][_top] = _cache['ctn'][_top][-20:]

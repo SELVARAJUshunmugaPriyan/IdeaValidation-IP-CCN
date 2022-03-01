@@ -31,12 +31,12 @@ for i in `seq 0 $numberOfNodes`; do
 		eval "wpan-hwsim edge add "$i' '`expr $i + 1`
 	    eval "wpan-hwsim edge add "`expr $i + 1`' '$i
 		# CONFIGURE VIRTUAL LINK TOWARDS SDN CONTROLLER
-		ip link add tunnel_start type veth peer name tunnel_end
-		ip link set tunnel_end netns wpan0
-		ip link set dev tunnel_start up
-		ip a add 10.0.254.1/24 dev tunnel_start
-		ip netns exec wpan0 ip link set dev tunnel_end up
-		ip netns exec wpan0 ip a add 10.0.254.2/24 dev tunnel_end
+		#ip link add tunnel_start type veth peer name tunnel_end
+		#ip link set tunnel_end netns wpan0
+		#ip link set dev tunnel_start up
+		#ip a add 10.0.254.1/24 dev tunnel_start
+		#ip netns exec wpan0 ip link set dev tunnel_end up
+		#ip netns exec wpan0 ip a add 10.0.254.2/24 dev tunnel_end
 	else
 		if [ `expr "$i" % $1` != 0 ]; then
 			# East
@@ -67,6 +67,10 @@ for i in `seq 0 $numberOfNodes`; do
 	ip netns exec wpan$i iwpan dev wpan$i set pan_id 0xbeef
 	ip netns exec wpan$i ip link set dev wpan$i up
 
-	# STARTING THE NODE PYTHON PROCESS
-	ip netns exec wpan$i /home/wifi/Downloads/simple/Idea-validation-ip-ccn/simpleSock.py $i $1 $2 $3 &>>/home/wifi/Downloads/simple/Idea-validation-ip-ccn/log/wpan$i.log &
+	if [ $i == 0 ]; then
+		# STARTING THE NODE PYTHON PROCESS
+		ip netns exec wpan$i /home/wifi/Downloads/simple/Idea-validation-ip-ccn/simpleSock.py $i $1 $2 $3 &>>/home/wifi/Downloads/simple/Idea-validation-ip-ccn/log/wpan$i.log &
+	else
+		ip netns exec wpan$i /home/wifi/Downloads/simple/Idea-validation-ip-ccn/simpleSock.py $i $1 $2 $3 &>>/dev/null &
+	fi
 done
