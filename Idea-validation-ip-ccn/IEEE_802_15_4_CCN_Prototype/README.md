@@ -12,7 +12,7 @@ Usage               :
 
 testScript.sh
 
-```
+```shell
 #/usr/bin/bash
 
 for i in 7 8 9                      # Change the range for 'i' or X in XxX grid/matrix topology
