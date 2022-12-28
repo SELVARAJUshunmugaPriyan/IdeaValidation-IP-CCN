@@ -10,35 +10,36 @@ import random
 
 def emptySocket(sock):
     # Remove the data present on the socket
-        _input = [sock]
-        while True:
-            _inputReady, o, e = select.select(_input,[],[], 0.0)
-            if not _inputReady.__len__(): 
-                break
-            for _sck in _inputReady:
-                try:
-                    _sck.recv(123)
-                except BlockingIOError:
-                    pass
-        return
+    _input = [sock]
+    while True:
+        _inputReady, o, e = select.select(_input,[],[], 0.0)
+        if not _inputReady.__len__(): 
+            break
+        for _sck in _inputReady:
+            try:
+                _sck.recv(123)
+            except BlockingIOError:
+                pass
+    return
 
 if __name__ == "__main__" :
 
     _cache   = {
-        'nod': None, # Node number
-        'sat': False, # Device Status
-        'ctn': {},   # Contains actual topic:value pair
-        'com': False, # Start Flag
+        'nod': None,    # Node number
+        'sat': False,   # Device Status
+        'cnt': {},      # Contains actual topic:value pair
+        'com': False,   # Start Flag
     }
     _rcvPkt = None
-    _sndBfr = b'\x41\xc8\x00\xff\xff\xff\xff' # IEEE 802154 Broadcast Format
+    _sndBfr = b'\x41\xc8\x00\xff\xff\xff\xff'   # Preceeding IEEE 802154 Broadcast Format
+                                                # Incomplete without CRC trailer (avoided for prototyping)
 
     try:
         _cache['nod'] = int(sys.argv[1])
         _cache['_x'] = int(sys.argv[2])
         _cache['drp'] = int(sys.argv[4])
-        _cache['x_x'] = _cache['_x'] * _cache['_x']
-        _cache['ctn']['{0:02d}'.format(_cache['x_x'])] = []
+        _cache['x_x'] = _cache['_x'] * _cache['_x'] # Identifying the communicating node
+        _cache['cnt']['{0:02d}'.format(_cache['x_x'])] = []
     except ValueError :
         raise Exception("Incorrect value for number of nodes")
     except IndexError :
@@ -63,7 +64,7 @@ if __name__ == "__main__" :
     with open('/sys/class/net/wpan{}/address'.format(_cache['nod']), 'r') as f :
             _strng = f.readline()
             _strng = b''.join(binascii.unhexlify(x) for x in _strng[:-1].split(':'))
-            _sndBfr += _strng
+            _sndBfr += _strng                   # Appending Device MAC address
 
     if _cache['nod'] == _cache['x_x'] :
         logging.info(_cache['nod'])
@@ -103,13 +104,13 @@ if __name__ == "__main__" :
             _top = _rcvPkt[16:18].decode('utf-8')
             _jmp = _rcvPkt[18:].decode('utf-8').split('>')
             _val = _jmp[-1]
-            if _top in _cache['ctn'].keys() and _val not in _cache['ctn'][_top]:
+            if _top in _cache['cnt'].keys() and _val not in _cache['cnt'][_top]:
                 logging.info(_rcvPkt.__len__())
                 logging.info(_jmp[:-1])
                 logging.info(datetime.datetime.now() - datetime.datetime.strptime(_val, "%Y-%m-%d %H:%M:%S.%f")) # 2022-02-24 15:02:45.860661
                 # Update cache if new value
-                _cache['ctn'][_top].append(_val)
-                _cache['ctn'][_top] = _cache['ctn'][_top][-20:]
+                _cache['cnt'][_top].append(_val)
+                _cache['cnt'][_top] = _cache['cnt'][_top][-20:]
                 if _cache['nod'] and round(random.random() * 100) > _cache['drp'] :
                     _sndBfr = _sndBfr[:15] + _rcvPkt[15:19] + bytes('{0:02d}'.format(_cache['nod']), 'utf8') + b'>' + _rcvPkt[19:]
                     logging.debug(_sndBfr)

@@ -69,8 +69,9 @@ for i in `seq 0 $numberOfNodes`; do
 
 	if [ $i == 0 ]; then
 		# STARTING THE NODE PYTHON PROCESS
-		ip netns exec wpan$i /home/wifi/Downloads/simple/Idea-validation-ip-ccn/simpleSock.py $i $1 $2 $3 &>>/home/wifi/Downloads/simple/Idea-validation-ip-ccn/log/wpan$i.log &
+		# IMPORTANT : Kindly change the directory path in line 73 and 75 to point towards the absolute path of 'wpaNodeSock.py' and change the output location for log file in line 73
+		ip netns exec wpan$i /home/priyan/github-repo-offline/IdeaValidation-IP-CCN/Idea-validation-ip-ccn/IEEE_802_15_4_CCN_Prototype/src/wpaNodeSock.py $i $1 $2 $3 &>>/home/priyan/github-repo-offline/IdeaValidation-IP-CCN/Idea-validation-ip-ccn/IEEE_802_15_4_CCN_Prototype/logs/wpan$i.log &
 	else
-		ip netns exec wpan$i /home/wifi/Downloads/simple/Idea-validation-ip-ccn/simpleSock.py $i $1 $2 $3 &>>/dev/null &
+		ip netns exec wpan$i /home/priyan/github-repo-offline/IdeaValidation-IP-CCN/Idea-validation-ip-ccn/IEEE_802_15_4_CCN_Prototype/src/wpaNodeSock.py $i $1 $2 $3 &>>/dev/null &
 	fi
 done
